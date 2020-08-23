@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,8 +30,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P9l-GN-8gy">
-                                                <rect key="frame" x="117" y="10" width="39" height="30"/>
-                                                <state key="normal" title="지난달"/>
+                                                <rect key="frame" x="113" y="10" width="43" height="30"/>
+                                                <state key="normal" title="지난 달"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9y-2Q-jtP">
                                                 <rect key="frame" x="219" y="10" width="46" height="30"/>
@@ -38,7 +39,7 @@
                                                     <constraint firstAttribute="width" constant="46" id="aoA-Mw-PYm"/>
                                                     <constraint firstAttribute="height" constant="30" id="h36-fp-6ZW"/>
                                                 </constraints>
-                                                <state key="normal" title="다음달"/>
+                                                <state key="normal" title="다음 달"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0j-Xu-Flj">
                                                 <rect key="frame" x="166" y="10" width="43" height="30"/>
@@ -103,6 +104,26 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IEY-Pa-AWj">
+                                        <rect key="frame" x="0.0" y="80.5" width="375" height="299.5"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gRq-iq-DTd">
+                                            <size key="itemSize" width="128" height="128"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DateCell" id="V8N-lH-36L">
+                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Ja7-DL-fvF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </collectionViewCellContentView>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -111,8 +132,12 @@
                                     <constraint firstAttribute="trailing" secondItem="oSO-f7-5x9" secondAttribute="trailing" id="BBK-5p-XrA"/>
                                     <constraint firstAttribute="height" constant="380" id="Bka-qV-BD5"/>
                                     <constraint firstAttribute="trailing" secondItem="sgt-nQ-CHz" secondAttribute="trailing" id="Dkn-QP-ICO"/>
+                                    <constraint firstAttribute="bottom" secondItem="IEY-Pa-AWj" secondAttribute="bottom" id="Gp1-K4-o3r"/>
+                                    <constraint firstItem="IEY-Pa-AWj" firstAttribute="leading" secondItem="985-ca-Xeg" secondAttribute="leading" id="Oe5-ey-ROP"/>
+                                    <constraint firstItem="IEY-Pa-AWj" firstAttribute="top" secondItem="sgt-nQ-CHz" secondAttribute="bottom" constant="5" id="TjY-d4-oto"/>
                                     <constraint firstItem="oSO-f7-5x9" firstAttribute="leading" secondItem="985-ca-Xeg" secondAttribute="leading" id="faz-w2-rbM"/>
                                     <constraint firstItem="sgt-nQ-CHz" firstAttribute="leading" secondItem="985-ca-Xeg" secondAttribute="leading" id="j1v-OO-2yb"/>
+                                    <constraint firstAttribute="trailing" secondItem="IEY-Pa-AWj" secondAttribute="trailing" id="mIy-vm-mVI"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oHp-GF-0b2">

@@ -13,6 +13,7 @@
 		1358BAE724F2B43400E18465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1358BAE524F2B43400E18465 /* Main.storyboard */; };
 		1358BAE924F2B43700E18465 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1358BAE824F2B43700E18465 /* Assets.xcassets */; };
 		1358BAEC24F2B43700E18465 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1358BAEA24F2B43700E18465 /* LaunchScreen.storyboard */; };
+		1358BAF624F2CC9100E18465 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1358BAF524F2CC9100E18465 /* DateCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1358BAE824F2B43700E18465 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1358BAEB24F2B43700E18465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1358BAED24F2B43700E18465 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1358BAF524F2CC9100E18465 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				1358BADF24F2B43400E18465 /* AppDelegate.swift */,
 				1358BAE124F2B43400E18465 /* SceneDelegate.swift */,
-				1358BAE324F2B43400E18465 /* ViewController.swift */,
 				1358BAE524F2B43400E18465 /* Main.storyboard */,
+				1358BAE324F2B43400E18465 /* ViewController.swift */,
+				1358BAF524F2CC9100E18465 /* DateCollectionViewCell.swift */,
 				1358BAE824F2B43700E18465 /* Assets.xcassets */,
 				1358BAEA24F2B43700E18465 /* LaunchScreen.storyboard */,
 				1358BAED24F2B43700E18465 /* Info.plist */,
@@ -141,6 +144,7 @@
 				1358BAE424F2B43400E18465 /* ViewController.swift in Sources */,
 				1358BAE024F2B43400E18465 /* AppDelegate.swift in Sources */,
 				1358BAE224F2B43400E18465 /* SceneDelegate.swift in Sources */,
+				1358BAF624F2CC9100E18465 /* DateCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
