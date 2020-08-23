@@ -14,10 +14,8 @@ class DateCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var dateView: UIView!
     @IBOutlet weak var dateLabel: UILabel!
     
-    func set(_ dateInformation: Date){
-        dateView.backgroundColor = dateInformation.colorOfDate
-        dateLabel.text = dateInformation.dateNumber
-    }
+//
+    
     
     
 }
